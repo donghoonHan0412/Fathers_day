@@ -2,7 +2,7 @@ import { useRoutes } from 'react-router-dom';
 import routes from './routing';
 import { ThemeProvider } from '@material-ui/core';
 import React, { useEffect } from 'react';
-import theme from 'src/theme';
+// import theme from 'src/theme';
 
 const App = () => {
   const routing = useRoutes(routes);
@@ -11,7 +11,9 @@ const App = () => {
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider 
+    // theme={theme}
+    >
       {routing}
     </ThemeProvider>
   );

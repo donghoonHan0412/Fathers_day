@@ -5,3 +5,17 @@
 // 먹었는지 버튼 클릭
 
 // 1시간 이내에 버튼 안누르면 알람 나가게!!!!!
+
+import React, { useEffect } from 'react';
+
+const AfterMorning = () => {
+
+    return (
+        <div>
+            "it is AfterMorning"
+        </div>
+    )
+}
+
+
+export default AfterMorning;

@@ -58,3 +58,10 @@ info Visit https://yarnpkg.com/en/docs/cli/create for documentation about this c
 
 npm init react-app hello-react
 	이건 가능했음
+
+
+
+	ㅡㅡㅡㅡㅡㅡㅡ
+	0506
+	npm install @material-ui/core
+	

@@ -1,21 +1,21 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import MainLayout from './pages/MAIN/main';
+import MainLayout from './Pages/main';
 import AwakeView from './Components/Awake';
-import AwakeView from './Components/Morning';
-import AwakeView from './Components/AfterMorning';
-import AwakeView from './Components/Lunch';
-import AwakeView from './Components/Dinner';
+import MorningView from './Components/Morning';
+import AfterMorningView from './Components/AfterMorning';
+import LunchView from './Components/Lunch';
+import DinnerView from './Components/Dinner';
 
 
 const routes = [
   {
-    path: 'app',
+    path: '',
     element: <MainLayout />,
     children: [
       { path: '/morning/awake', element: <AwakeView /> },
-      { path: '/morning/beforeMorning', element: <Morning /> },
-      { path: '/morning/afterMorning', element: <AfterMorning /> },
+      { path: '/morning/beforeMorning', element: <MorningView /> },
+      { path: '/morning/afterMorning', element: <AfterMorningView /> },
       { path: '/afternoon/afterLunch/', element: <LunchView /> },
       { path: '/evening/afterDinner', element: <DinnerView/> },
       { path: '/night/beforeSleep', element: <DinnerView /> }
@@ -23,7 +23,7 @@ const routes = [
   },
   {
     path: '/',
-    element: <Navigate to="/app" />,
+    element: <Navigate to="/morning/awake" />,
   }
 ];
 
